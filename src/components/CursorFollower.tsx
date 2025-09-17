@@ -15,17 +15,17 @@ export const CursorFollower = () => {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       <div
-        className="absolute w-96 h-96 rounded-full opacity-30 blur-3xl bg-gradient-to-r from-primary/20 to-accent/20 transition-all duration-300 ease-out"
+        className="absolute w-[500px] h-[500px] rounded-full opacity-40 blur-3xl bg-gradient-to-r from-primary/30 to-accent/30 transition-all duration-200 ease-out"
         style={{
-          left: mousePosition.x - 192,
-          top: mousePosition.y - 192,
+          left: mousePosition.x - 250,
+          top: mousePosition.y - 250,
         }}
       />
       <div
-        className="absolute w-64 h-64 rounded-full opacity-20 blur-2xl bg-gradient-to-r from-primary/30 to-secondary/30 transition-all duration-500 ease-out"
+        className="absolute w-80 h-80 rounded-full opacity-30 blur-2xl bg-gradient-to-r from-primary/40 to-secondary/40 transition-all duration-300 ease-out"
         style={{
-          left: mousePosition.x - 128,
-          top: mousePosition.y - 128,
+          left: mousePosition.x - 160,
+          top: mousePosition.y - 160,
         }}
       />
     </div>
