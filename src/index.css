@@ -133,3 +133,8 @@ All colors MUST be HSL.
     transform: translateY(0);
   }
 }
+
+
+h2 {
+  line-height: 1.5 !important;
+}
