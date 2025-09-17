@@ -19,7 +19,6 @@ export const CursorFollower = () => {
         style={{
           left: mousePosition.x - 250,
           top: mousePosition.y - 250,
-          transform: 'translate3d(0, 0, 0)',
         }}
       />
       <div
@@ -27,7 +26,6 @@ export const CursorFollower = () => {
         style={{
           left: mousePosition.x - 160,
           top: mousePosition.y - 160,
-          transform: 'translate3d(0, 0, 0)',
         }}
       />
     </div>
