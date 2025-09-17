@@ -11,7 +11,19 @@ export const translations = {
     },
     projects: {
       title: "Proyectos",
-      content: "Aquí puedes ver algunos de mis trabajos más destacados. Cada proyecto representa un desafío único que he abordado con creatividad y dedicación, utilizando las mejores prácticas de desarrollo y las tecnologías más actuales."
+      content: "Aquí puedes ver algunos de mis trabajos más destacados. Cada proyecto representa un desafío único que he abordado con creatividad y dedicación, utilizando las mejores prácticas de desarrollo y las tecnologías más actuales.",
+      projects: [
+        {
+          title: "E-commerce Dashboard",
+          description: "Panel de administración completo para tienda online con análisis en tiempo real, gestión de productos y seguimiento de ventas.",
+          tech: ["React", "TypeScript", "Node.js", "MongoDB"]
+        },
+        {
+          title: "Aplicación de Fitness",
+          description: "App móvil para seguimiento de entrenamientos con rutinas personalizadas, estadísticas de progreso y comunidad de usuarios.",
+          tech: ["React Native", "Firebase", "Redux", "Charts.js"]
+        }
+      ]
     },
     contact: {
       title: "Contacto",
@@ -38,7 +50,19 @@ export const translations = {
     },
     projects: {
       title: "Projects",
-      content: "Here you can see some of my most outstanding work. Each project represents a unique challenge that I have approached with creativity and dedication, using the best development practices and the most current technologies."
+      content: "Here you can see some of my most outstanding work. Each project represents a unique challenge that I have approached with creativity and dedication, using the best development practices and the most current technologies.",
+      projects: [
+        {
+          title: "E-commerce Dashboard",
+          description: "Complete administration panel for online store with real-time analytics, product management and sales tracking.",
+          tech: ["React", "TypeScript", "Node.js", "MongoDB"]
+        },
+        {
+          title: "Fitness Application",
+          description: "Mobile app for workout tracking with personalized routines, progress statistics and user community.",
+          tech: ["React Native", "Firebase", "Redux", "Charts.js"]
+        }
+      ]
     },
     contact: {
       title: "Contact",

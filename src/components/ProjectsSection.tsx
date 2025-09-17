@@ -1,4 +1,5 @@
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/lib/translations';
 import projectImage from '@/assets/project-showcase.jpg';
@@ -14,28 +15,44 @@ export const ProjectsSection = () => {
           {t.projects.title}
         </h2>
         
-        <Card className="bg-card-bg border-border backdrop-blur-sm overflow-hidden">
-          <CardContent className="p-0">
-            <div className="grid md:grid-cols-2 gap-0">
-              <div className="p-8 flex items-center">
-                <div className="space-y-4">
-                  <p className="text-lg leading-relaxed text-muted-foreground">
-                    {t.projects.content}
-                  </p>
-                </div>
-              </div>
-              
-              <div className="relative">
+        <p className="text-lg text-center text-muted-foreground mb-16 max-w-3xl mx-auto">
+          {t.projects.content}
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {t.projects.projects.map((project, index) => (
+            <Card key={index} className="bg-card-bg border-border backdrop-blur-sm overflow-hidden hover:scale-105 transition-transform duration-300">
+              <div className="relative h-48">
                 <img 
                   src={projectImage}
-                  alt="Project showcase"
-                  className="w-full h-full object-cover min-h-[300px]"
+                  alt={project.title}
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card-bg/90 to-transparent" />
               </div>
-            </div>
-          </CardContent>
-        </Card>
+              
+              <CardHeader>
+                <CardTitle className="text-xl bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                  {project.title}
+                </CardTitle>
+              </CardHeader>
+              
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, techIndex) => (
+                    <Badge key={techIndex} variant="secondary" className="text-xs">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );

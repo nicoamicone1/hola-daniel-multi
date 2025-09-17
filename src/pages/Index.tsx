@@ -4,6 +4,7 @@ import { AboutSection } from '@/components/AboutSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { ContactSection } from '@/components/ContactSection';
 import { LanguageSelector } from '@/components/LanguageSelector';
+import { CursorFollower } from '@/components/CursorFollower';
 
 const Index = () => {
   const aboutRef = useRef<HTMLElement>(null);
@@ -13,15 +14,19 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <CursorFollower />
+      
       <div className="fixed top-4 right-4 z-50">
         <LanguageSelector />
       </div>
       
-      <HeroSection onScrollToAbout={scrollToAbout} />
-      <AboutSection ref={aboutRef} />
-      <ProjectsSection />
-      <ContactSection />
+      <div className="relative z-10">
+        <HeroSection onScrollToAbout={scrollToAbout} />
+        <AboutSection ref={aboutRef} />
+        <ProjectsSection />
+        <ContactSection />
+      </div>
     </div>
   );
 };
