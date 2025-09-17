@@ -14,20 +14,20 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative">
+    <>
       <CursorFollower />
       
-      <div className="fixed top-4 right-4 z-50">
-        <LanguageSelector />
-      </div>
-      
-      <div className="relative z-10">
+      <div className="min-h-screen bg-background relative z-10">
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageSelector />
+        </div>
+        
         <HeroSection onScrollToAbout={scrollToAbout} />
         <AboutSection ref={aboutRef} />
         <ProjectsSection />
         <ContactSection />
       </div>
-    </div>
+    </>
   );
 };
 
