@@ -5,6 +5,9 @@ import { translations } from '@/lib/translations';
 import projectImage from '@/assets/project-showcase.jpg';
 import disco from '@/assets/disco.png';
 import dash from '@/assets/dash.png';
+import next from '@/assets/next.png';
+import serweld from '@/assets/serweld.png';
+import diaita from '@/assets/diaita.png';
 
 export const ProjectsSection = () => {
   const { language } = useLanguage();
@@ -28,7 +31,10 @@ export const ProjectsSection = () => {
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="absolute inset-0">
                   <img
                     src={index === 0 ? disco :
-                      (index === 1 ? dash : projectImage)
+                      (index === 1 ? dash :
+                        index === 2 ? next :
+                          index === 3 ? serweld : diaita
+                      )
                     }
                     alt={project.title}
                     className="w-full h-full object-cover"
