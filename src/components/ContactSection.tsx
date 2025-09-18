@@ -32,7 +32,7 @@ export const ContactSection = () => {
                 className="gap-2 border-primary/20 hover:border-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="mailto:daniel@example.com">
+                <a href="mailto:nicoamicone1@gmail.com">
                   <Mail className="h-5 w-5" />
                   {t.contact.email}
                 </a>
@@ -44,7 +44,7 @@ export const ContactSection = () => {
                 className="gap-2 border-primary/20 hover:border-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/nicoamicone1" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                   {t.contact.linkedin}
                 </a>
@@ -56,7 +56,7 @@ export const ContactSection = () => {
                 className="gap-2 border-primary/20 hover:border-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/nicoamicone1" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                   {t.contact.github}
                 </a>
