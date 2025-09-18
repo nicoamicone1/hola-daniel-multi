@@ -56,7 +56,7 @@ export const ContactSection = () => {
                 className="gap-2 border-primary/20 hover:border-primary hover:bg-primary/10"
                 asChild
               >
-                <a href="https://github.com/nicoamicone1" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/nicoamiconepd" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                   {t.contact.github}
                 </a>
